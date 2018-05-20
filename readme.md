@@ -11,7 +11,7 @@ This is a very simple game which I made for a event at my kids school.
 
 # What it Looks Like
 
-![Picture](.\pic.png)
+![Picture](pic.png)
 
 # Setup
 
