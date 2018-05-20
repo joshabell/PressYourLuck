@@ -1,0 +1,7 @@
+{
+    "sketch": "app.ino",
+    "board": "arduino:avr:pro",
+    "configuration": "cpu=16MHzatmega328",
+    "output": "./arduino_build",
+    "port": "COM3"
+}
