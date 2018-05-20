@@ -1,6 +1,8 @@
 #ifndef ARDUINO
-#include <iostream>
 
+// A non-arduino program (console app) used for testing!
+
+#include <iostream>
 #include "Wheel.h"
 
 class TestUpdater : public Updater
@@ -23,19 +25,19 @@ class TestUpdater : public Updater
 
         if (type == LightTypePosition)
         {
-            m_leds[index-1] = '*';
+            m_leds[index - 1] = '*';
         }
         else if (type == LightTypeTarget)
         {
-            m_leds[index-1] = '+';
+            m_leds[index - 1] = '+';
         }
         else if (type == LightTypeTrack)
         {
-            m_leds[index-1] = '.';
+            m_leds[index - 1] = '.';
         }
         else if (type == LightTypeWinPosition)
         {
-            m_leds[index-1] = '!';
+            m_leds[index - 1] = '!';
         }
     }
 
@@ -48,7 +50,7 @@ int main(int, char **)
     TestUpdater t;
     Wheel w(&t);
 
-    for (int i=0;i<100;i++)
+    for (int i = 0; i < 100; i++)
     {
         w.step();
         if (w.isHit())
